@@ -6,7 +6,7 @@ services:
     image: myfpm:latest
     user: 1000:1000
     volumes:
-      - ./:/var/www/html
+      - ./app:/var/www/html
     environment:
       DB_DRIVER: mysql
       DB_SERVER: db
